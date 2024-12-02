@@ -10,7 +10,7 @@ module.exports = {
     usages: "text",
     cooldowns: 5,
     dependencies: {
-      'nayan-server': ''
+    
     }
   },
 
