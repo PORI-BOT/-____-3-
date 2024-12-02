@@ -9,8 +9,7 @@ module.exports.config = {
   usages: "text",
   cooldowns: 5,
   dependencies: {
-        'image-downloader': '',
-    'nayan-server': ''
+        
   }
 };
 module.exports.run = async function({ api, event, args }) {
