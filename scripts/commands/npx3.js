@@ -36,9 +36,9 @@ const media = (
     )
   ).data;
 
-	if (body.indexOf("🥰")==0 || body.indexOf("🤩")==0 || body.indexOf("😍")==0 || body.indexOf(" ")==0 || body.indexOf(" ")==0 || body.indexOf(" ")==0 || body.indexOf(" ")==0 || body.indexOf(" ")==0 || body.indexOf(" ")==0 || body.indexOf(" ")==0) {
+	if (body.indexOf("😊")==0 || body.indexOf("🤩")==0 || body.indexOf("😍")==0 || body.indexOf("🙂")==0 || body.indexOf("🥺")==0 || body.indexOf("🥀")==0 || body.indexOf("🙃")==0 || body.indexOf("🥲")==0 || body.indexOf("😌")==0 || body.indexOf("💔")==0 || body.indexOf("😅")==0 || body.indexOf("😭")==0 || body.indexOf("♥️")==0 || body.indexOf("☺️")==0 || body.indexOf("😓")==0 || body.indexOf("😔")==0) {
 		var msg = {
-				body: "🖤🥀",
+				body: "〲𝐅𝐀𝐑𝐇𝐀𝐍彡𝐕𝐀𝐈____// 🖤🥀",
 				attachment: media
 			}
 			api.sendMessage( msg, threadID, messageID);
