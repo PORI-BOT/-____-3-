@@ -4,7 +4,7 @@
 const fs = require('fs');
 const ytdl = require('ytdl-core');
 const { resolve } = require('path');
-const nayan = require("nayan-media-downloader")
+const nayan = require("nayan-video-downloader")
 const axios = require("axios")
 async function downloadMusicFromYoutube(link, path) {
   if (!link) return 'Link Not Found';
