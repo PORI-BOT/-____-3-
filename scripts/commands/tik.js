@@ -10,7 +10,7 @@ config: {
   usages: "link",
   cooldowns: 5,
   dependencies: {
-        'nayan-server': '',
+        
   }
 },
   
