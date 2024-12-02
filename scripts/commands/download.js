@@ -15,7 +15,7 @@ config:{
   ],
   cooldowns: 5,
   dependencies: {
-        'nayan-media-downloader': '',
+        
   }
 },
 
