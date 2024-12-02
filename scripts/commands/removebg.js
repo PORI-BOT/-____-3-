@@ -9,7 +9,7 @@ module.exports.config = {
     usages: "reply",
     cooldowns: 10,
     dependencies: {
-       'nayan-server': ''
+       
     }
 };
 
