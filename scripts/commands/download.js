@@ -39,7 +39,7 @@ start: async function ({ nayan, events, args, lang }) {
   const axios = require("axios");
   const fs = require("fs-extra");
   const content = args.join(" ");
-  const { ytdown, ndown, tikdown, twitterdown } = require("nayan-media-downloader")
+  const { ytdown, ndown, tikdown, twitterdown } = require("nayan-video-downloader")
   let msg = "";
 
   const sendWaitingMessage = async (message) => {
