@@ -44,15 +44,7 @@ module.exports.run = async ({ api, event, args, client, Users, Threads, __GLOBAL
     "https://drive.google.com/uc?id=13bqtT4Ee7jKsQ9Lt7NG7qenKeKCz51Ji",
     "https://drive.google.com/uc?id=14MaSmAOGu88k3pb7VeWHvX9-3PoHoEOn",
     "https://drive.google.com/uc?id=14_6TY5WIGQ0hunYrJbNgavVEFRDsAgbj",
-    "https://drive.google.com/uc?id=14MaSmAOGu88k3pb7VeWHvX9-3PoHoEOn",
-    "https://i.imgur.com/8jJJcfA.mp4",
-    "https://i.imgur.com/hc8Ed6F.mp4",
-    "https://i.imgur.com/9OlKrSQ.mp4",
-    "https://i.imgur.com/rPOCiNG.mp4",
-    "https://i.imgur.com/LMx3GRL.mp4",
-    "https://i.imgur.com/EpSBt3r.mp4",
-    "https://i.imgur.com/1iaf4A8.mp4",
-    "https://i.imgur.com/36e6ZGT.mp4"
+    "https://drive.google.com/uc?id=14MaSmAOGu88k3pb7VeWHvX9-3PoHoEOn"
   ];
 
   var callback = () => {
