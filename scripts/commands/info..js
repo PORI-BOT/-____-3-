@@ -1,8 +1,8 @@
 module.exports.config = {
-  name: "admin",
+  name: "info",
   version: "1.0.0",
   permission: 0,
-  credits: "nayan",
+  credits: "farhan",
   prefix: true,
   description: "search results on google",
   category: "without prefix",
@@ -20,12 +20,21 @@ const axios = global.nodemodule["axios"];
 const request = global.nodemodule["request"];
 const fs = global.nodemodule["fs-extra"];
 const time = process.uptime(),
-  hours = Math.floor(time / (60 * 60)),
-  minutes = Math.floor((time % (60 * 60)) / 60),
-  seconds = Math.floor(time % 60);
+		hours = Math.floor(time / (60 * 60)),
+		minutes = Math.floor((time % (60 * 60)) / 60),
+		seconds = Math.floor(time % 60);
 const moment = require("moment-timezone");
 var juswa = moment.tz("Asia/Dhaka").format("『D/MM/YYYY』 【hh:mm:ss】");
+var link = ["https://i.postimg.cc/0NYJcjpR/Messenger-creation-1401370797218406.png", 
+            
+            "https://i.postimg.cc/JhxzskNn/Snapchat-2014418092.jpg", 
+            
+            "https://i.postimg.cc/0NYJcjpR/Messenger-creation-1401370797218406.png",
 
+"https://i.postimg.cc/8cJpXXqJ/Snapchat-670991066.jpg",
+            
+            "https://i.postimg.cc/KvRXLsTB/FB-IMG-1709702111184.jpg"];
+  
 var callback = () => api.sendMessage({body:`🌺🍒🐰❀𝐀𝐃𝐌𝐈𝐍 𝐀𝐍𝐃 𝐁𝐎𝐓 𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐓𝐈𝐎𝐍💝🐰🍒 
 
 ╔════•|      ✿      |•════╗
@@ -36,7 +45,7 @@ ________________________________________
 
 💠𝐁𝐎𝐓 𝐍𝐀𝐌𝐄💠 : ${global.config.BOTNAME}
 
-🌼𝐁𝐎𝐓 𝐀𝐃𝐌𝐈𝐍🌼 : 『😽👉  𝐑𝐉 𝐅𝐀𝐑𝐇𝐀𝐍 👈😽』
+🌼𝐁𝐎𝐓 𝐀𝐃𝐌𝐈𝐍🌼 : 『😽👉𝐑𝐉-𝐅𝐀𝐑𝐇𝐀𝐍👈😽』
 
 🔥𝐁𝐈𝐎 𝐀𝐃𝐌𝐈𝐍🔥 : [ ⊱༅༎😽💚༅༎⊱
 
@@ -48,8 +57,12 @@ ________________________________________
 
 ⊱༅༎😽💚༅༎⊱ ]
 
-🏠𝐀𝐃𝐃𝐑𝐄𝐒𝐒🏠 : যশোর, বাংলাদেশ
-
+🏠𝐀𝐃𝐃𝐑𝐄𝐒𝐒🏠 :[𝐂𝐇𝐔𝐀𝐃𝐀𝐍𝐆𝐀]:[𝐁𝐀𝐍𝐆𝐋𝐀𝐃𝐄𝐒𝐇] 
+🌺𝐑𝐄𝐋𝐈𝐆𝐈𝐎𝐍🌺 :[𝐈𝐒𝐋𝐀𝐌]
+💮𝐆𝐄𝐍𝐃𝐄𝐑💮  :[𝐌𝐀𝐋𝐄]
+🌸𝐑𝐄𝐋𝐀𝐓𝐈𝐎𝐍𝐒𝐇𝐈𝐏🌸 :[𝐒𝐈𝐍𝐆𝐋𝐄]
+🌼𝐖𝐎𝐑𝐊🌼 :[𝐉𝐎𝐁]
+🌷𝐖𝐇𝐀𝐓'𝐒 𝐀𝐏𝐏🌷:[𝟎𝟏𝟖𝟔𝟔𝟔𝟕𝟑𝟖𝟎𝟏]
 _____________🅲🅾🅽🆃🅰🅲🆃_____________
 
 💥𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊 𝐈𝐃 (❶)💥 : https://www.facebook.com/profile.php?id=100090087850647&mibextid=ZbWKwL
@@ -76,8 +89,6 @@ _____________🅲🅾🅽🆃🅰🅲🆃_____________
 
 🐰🍒𝐁𝐎𝐓 𝐈𝐒 𝐑𝐔𝐍𝐍𝐈𝐍𝐆🍒🐰 ${hours}:${minutes}:${seconds}.
 
-💚🌺𝐓𝐇𝐀𝐍𝐊𝐒 𝐅𝐎𝐑 𝐔𝐒𝐈𝐍𝐆🌺💚 ${global.config.BOTNAME} 『😽🖤🌺』`,attachment: fs.createReadStream(__dirname + "/cache/1.png")}, event.threadID, () => 
-  fs.unlinkSync(__dirname + "/cache/1.png"));  
-    return request(encodeURI(`https://graph.facebook.com/61550121814016/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`)).pipe(
-fs.createWriteStream(__dirname+'/cache/1.png')).on('close',() => callback());
- };
+💚🌺𝐓𝐇𝐀𝐍𝐊𝐒 𝐅𝐎𝐑 𝐔𝐒𝐈𝐍𝐆🌺💚 ${global.config.BOTNAME} 『😽🖤🌺』`,attachment: fs.createReadStream(__dirname + "/cache/juswa.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/juswa.jpg")); 
+      return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/juswa.jpg")).on("close",() => callback());
+   };
